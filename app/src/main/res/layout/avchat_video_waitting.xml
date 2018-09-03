@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在等待患者接通"
+            android:textColor="@color/colorWhite"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/btInfo"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@color/colorPrimary"
+            android:text="患者资料"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            app:qmui_backgroundColor="@color/colorPrimary"
+            app:qmui_borderWidth="0dp"
+            app:qmui_radius="3dp" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/btCancel"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="17dp"
+            android:text="取消预约"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:qmui_backgroundColor="@android:color/transparent"
+            app:qmui_borderColor="@color/colorPrimary"
+            app:qmui_borderWidth="1dp"
+            app:qmui_radius="3dp" />
+
+        <TextView
+            style="@style/text14"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="47dp"
+            android:text="若15分钟内用户未接通，可无责任取消预约"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+
+</RelativeLayout>

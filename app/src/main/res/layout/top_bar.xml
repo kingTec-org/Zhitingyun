@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/text18"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:padding="10dp"
+        android:src="@mipmap/back_blue" />
+
+    <ImageView
+        android:id="@+id/imgAlarm"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:src="@mipmap/alarm"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/viewRed"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_red_circle"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvFunction"
+        style="@style/text16"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:text="预约列表"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone" />
+
+</RelativeLayout>
