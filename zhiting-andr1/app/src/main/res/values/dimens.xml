@@ -1,0 +1,19 @@
+<resources>
+    <dimen name="activity_title_text_size">16sp</dimen>
+    <dimen name="normal_title_text_size">16sp</dimen>
+    <dimen name="normal_constent_text_size">14sp</dimen>
+    <dimen name="other_text_size">12sp</dimen>
+
+    <dimen name="normal_elevation">0dp</dimen>
+
+    <dimen name="normal_constent_text_margin">5px</dimen>
+    <dimen name="other_text_margin">5px</dimen>
+
+    <dimen name="edittext_height">40dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="layout_height">40dp</dimen>
+    <dimen name="top_height">40dp</dimen>
+    <dimen name="back_button_right_margin">20dp</dimen>
+    <dimen name="back_button_left_margin">10dp</dimen>
+
+</resources>

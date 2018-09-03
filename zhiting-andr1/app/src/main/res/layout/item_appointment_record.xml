@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="records"
+            type="com.xiyoukeji.zhitingyun.data.entity.RecordEntity"/>
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/headpic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Alex"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/level"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="left"-->
+                    <!--android:text="高级"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="16dp" />-->
+
+                <!--<View-->
+                    <!--android:layout_width="80dp"-->
+                    <!--android:layout_height="10dp"-->
+                    <!--android:layout_weight="1" />-->
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:text="正在预约"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="服务次数:"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/count_textview"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:text="120"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_login"
+                    android:text="取消预约"
+                    style="?android:attr/borderlessButtonStyle"
+
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btn_reason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_login"
+                    style="?android:attr/borderlessButtonStyle"
+
+                    android:text="查看原因"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_sue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    style="?android:attr/borderlessButtonStyle"
+
+                    android:background="@drawable/button_login"
+                    android:text="投诉"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:visibility="gone" />
+                <!--<View-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="10dp"-->
+                <!--android:layout_weight="4" />-->
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="预约时间:"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/time_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2018.05.09 15:30 -16:30"
+                    android:textColor="@color/text_gray1"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#F7F7F7"/>
+
+    <LinearLayout
+        android:id="@+id/finished_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="10dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_check_report"
+            android:layout_width="135dp"
+            android:layout_height="27dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_register"
+            style="?android:attr/borderlessButtonStyle"
+
+            android:text="查看医疗报告"
+            android:textColor="@color/mainColor"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_retreat"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+
+            android:background="@drawable/button_login"
+            android:text="复诊"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </LinearLayout>
+</LinearLayout>
+</layout>

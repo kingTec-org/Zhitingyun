@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.xiyoukeji.zhitingyun.viewmodel.main.MainViewModel"/>
+    </data>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F7F7F7">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="滑动滑块，手松开后会发出该分贝的声音"
+                android:textColor="#666666"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/resource_layout"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/volunm"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/type"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="纯音"
+                        android:textColor="@color/mainColor"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:id="@+id/resource"
+                        android:layout_width="5pt"
+                        android:layout_height="6pt"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/down_key" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:text="窄带噪音" />
+
+                <CheckBox
+                    android:id="@+id/setting_noise_chk"
+                    android:layout_width="60dp"
+                    android:layout_height="31dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/switch_bg"
+                    android:button="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="125"
+                        android:textColor="#333333"
+                        android:textSize="17dp" />
+                    <!--<EditText-->
+                        <!--android:id="@+id/et_tone_left"-->
+                        <!--android:layout_width="40dp"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                    <SeekBar
+                        android:id="@+id/hz125"
+                        style="@style/ProgressBar_Mini"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progressTint="@color/mainColor"
+                        android:thumb="@drawable/ph" />
+
+                    <TextView
+                        android:id="@+id/show_125"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="@color/mainColor"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="250"
+                        android:textColor="#333333"
+                        android:textSize="17dp" />
+
+                    <SeekBar
+                        android:id="@+id/hz250"
+                        style="@style/ProgressBar_Mini"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progressTint="@color/mainColor"
+                        android:thumb="@drawable/ph" />
+
+                    <TextView
+                        android:id="@+id/show_250"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="@color/mainColor"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="500"
+                        android:textColor="#333333"
+                        android:textSize="17dp" />
+
+                    <SeekBar
+                        android:id="@+id/hz500"
+                        style="@style/ProgressBar_Mini"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progressTint="@color/mainColor"
+                        android:thumb="@drawable/ph" />
+
+                    <TextView
+                        android:id="@+id/show_500"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="@color/mainColor"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="750"
+                        android:textColor="#333333"
+                        android:textSize="17dp" />
+
+                    <SeekBar
+                        android:id="@+id/hz750"
+                        style="@style/ProgressBar_Mini"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progressTint="@color/mainColor"
+                        android:thumb="@drawable/ph" />
+
+                    <TextView
+                        android:id="@+id/show_750"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="@color/mainColor"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="1000"
+                        android:textColor="#333333"
+                        android:textSize="17dp" />
+
+                    <SeekBar
+                        android:id="@+id/hz1000"
+                        style="@style/ProgressBar_Mini"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progressTint="@color/mainColor"
+                        android:thumb="@drawable/ph" />
+
+                    <TextView
+                        android:id="@+id/show_1000"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="@color/mainColor"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="1500"
+                        android:textColor="#333333"
+                        android:textSize="17dp" />
+
+                    <SeekBar
+                        android:id="@+id/hz1500"
+                        style="@style/ProgressBar_Mini"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progressTint="@color/mainColor"
+                        android:thumb="@drawable/ph" />
+
+                    <TextView
+                        android:id="@+id/show_1500"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="@color/mainColor"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="2000"
+                        android:textColor="#333333"
+                        android:textSize="17dp" />
+
+                    <SeekBar
+                        android:id="@+id/hz2000"
+                        style="@style/ProgressBar_Mini"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progressTint="@color/mainColor"
+                        android:thumb="@drawable/ph" />
+
+                    <TextView
+                        android:id="@+id/show_2000"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="@color/mainColor"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="3000"
+                        android:textColor="#333333"
+                        android:textSize="17dp" />
+
+                    <SeekBar
+                        android:id="@+id/hz3000"
+                        style="@style/ProgressBar_Mini"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progressTint="@color/mainColor"
+                        android:thumb="@drawable/ph" />
+
+                    <TextView
+                        android:id="@+id/show_3000"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="@color/mainColor"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="4000"
+                        android:textColor="#333333"
+                        android:textSize="17dp" />
+
+                    <SeekBar
+                        android:id="@+id/hz4000"
+                        style="@style/ProgressBar_Mini"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progressTint="@color/mainColor"
+                        android:thumb="@drawable/ph" />
+
+                    <TextView
+                        android:id="@+id/show_4000"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="@color/mainColor"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="6000"
+                        android:textColor="#333333"
+                        android:textSize="17dp" />
+
+                    <SeekBar
+                        android:id="@+id/hz6000"
+                        style="@style/ProgressBar_Mini"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progressTint="@color/mainColor"
+                        android:thumb="@drawable/ph" />
+
+                    <TextView
+                        android:id="@+id/show_6000"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="@color/mainColor"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="8000"
+                        android:textColor="#333333"
+                        android:textSize="17dp" />
+
+                    <SeekBar
+                        android:id="@+id/hz8000"
+                        style="@style/ProgressBar_Mini"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progressTint="@color/mainColor"
+                        android:thumb="@drawable/ph" />
+
+                    <TextView
+                        android:id="@+id/show_8000"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="@color/mainColor"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <!--<Button-->
+                <!--android:id="@+id/btn_auto"-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:layout_marginLeft="80dp"-->
+                <!--android:layout_marginRight="40dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@mipmap/checking"-->
+                <!--android:text="" />-->
+
+                <!--<Button-->
+                <!--android:id="@+id/btn_save"-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:layout_marginRight="80dp"-->
+                <!--android:layout_marginLeft="40dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@mipmap/btn_save"-->
+                <!--android:text="" />-->
+                <LinearLayout
+                    android:id="@+id/auto_layoutt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/autoimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@mipmap/checking" />
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="自动验配"
+                        android:textColor="#333333"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/save_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@mipmap/btn_save" />
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="保存"
+                        android:textColor="#333333"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/list_param"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:divider="@android:color/darker_gray"
+                    android:dividerHeight="0.5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+
+                <ListView
+                    android:id="@+id/list_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:divider="@android:color/darker_gray"
+                    android:dividerHeight="0.5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</layout>

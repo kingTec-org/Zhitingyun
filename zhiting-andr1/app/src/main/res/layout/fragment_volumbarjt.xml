@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp">
+
+        <!--<com.xiyoukeji.zhitingyun.widget.VerticalSeekBar-->
+        <!--android:id="@+id/left"-->
+        <!--style="@android:style/Widget.ProgressBar.Horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:layout_marginLeft="100dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:minHeight="0dp"-->
+        <!--android:progressTint="@color/mainColor"-->
+        <!--android:thumb="@drawable/ph" />-->
+
+
+        <TextView
+            android:id="@+id/show1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="左耳"
+            android:textColor="#333333"
+            android:textSize="18dp" />
+
+        <SeekBar
+            android:id="@+id/left"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:progressTint="@color/mainColor"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:thumb="@drawable/ph" />
+
+        <SeekBar
+            android:id="@+id/skb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <!--<SeekBar-->
+        <!--android:id="@+id/seekBar3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <!--<com.xiyoukeji.zhitingyun.widget.VerticalSeekBar-->
+        <!--android:id="@+id/right"-->
+        <!--style="@android:style/Widget.ProgressBar.Horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:layout_marginLeft="80dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:minHeight="0dp"-->
+        <!--android:progressTint="#FF6060"-->
+        <!--android:thumb="@drawable/ph" />-->
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:text="右耳"
+            android:textColor="#333333"
+            android:textSize="17dp" />
+
+        <SeekBar
+            android:id="@+id/right"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:progressTint="#FF6060"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="50dp"
+            android:thumb="@drawable/ph" />
+
+
+        <SeekBar
+            android:id="@+id/skb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_param"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/list_device"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/et_mem_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Button" />
+
+    <!--<SeekBar-->
+    <!--style="@android:style/Widget.ProgressBar.Horizontal"-->
+    <!--android:id="@+id/seekBar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:thumb="@drawable/ph"-->
+    <!--android:progressTint="@color/mainColor" />-->
+    <!--
+  android:max="":设置最大进度
+  android:progress=""：设置当前进度
+  android:secondaryProgress=""：设置第二进度
+  android:indeterminate=""：设置是否为不明确进度进度条
+  android:thumb="":设置seekbar滑动快的图片
+  android:progressDrawable="":进度条背景图片
+  android:thumbTint="":滑动块颜色,API21以上才有效
+  -->
+
+</LinearLayout>

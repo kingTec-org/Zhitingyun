@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:background="#F7F7F7"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="左耳" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#666666"
+            android:textSize="16dp"
+            android:text="高频" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/left_highsb"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:progressTint="#AF8BF7"
+                android:thumb="@drawable/ph" />
+
+            <TextView
+                android:id="@+id/left_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textColor="#AF8BF7"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#666666"
+            android:textSize="16dp"
+            android:text="低频" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/left_lowsb"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:progressTint="@color/mainColor"
+                android:thumb="@drawable/ph" />
+
+            <TextView
+                android:id="@+id/left_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textColor="@color/mainColor"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="右耳" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#666666"
+            android:textSize="16dp"
+            android:text="高频" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/right_highsb"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:progressTint="#FD9363"
+                android:thumb="@drawable/ph" />
+
+            <TextView
+                android:id="@+id/right_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textColor="#FD9363"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#666666"
+            android:textSize="16dp"
+            android:text="低频" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/right_lowsb"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:progressTint="#FF6060"
+                android:thumb="@drawable/ph" />
+
+            <TextView
+                android:id="@+id/right_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textColor="#FF6060"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_param"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/list_device"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <!--<SeekBar-->
+        <!--android:id="@+id/seekBar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+</LinearLayout>

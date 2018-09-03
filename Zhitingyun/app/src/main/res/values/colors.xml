@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="app_color_blue">#00A8E1</color>
+    <color name="app_color_blue_disabled">#8000A8E1</color>
+    <color name="app_color_blue_pressed">#c000A8E1</color>
+    <color name="app_color_background">#F7F7F7</color>
+
+    <color name="app_color_blue_2">#31BDF3</color>
+    <color name="app_color_blue_2_disabled">#7F31BDF3</color>
+    <color name="app_color_blue_2_pressed">#7F31BDF3</color>
+
+    <color name="app_color_theme_1">#EF5362</color> <!-- Grapefruit -->
+    <color name="app_color_theme_2">#FE6D4B</color> <!-- Bittersweet -->
+    <color name="app_color_theme_3">#FFCF47</color> <!-- Sunflower -->
+    <color name="app_color_theme_4">#9FD661</color> <!-- Grass -->
+    <color name="app_color_theme_5">#3FD0AD</color> <!-- Mint -->
+    <color name="app_color_theme_6">#2BBDF3</color> <!-- Aqua -->
+    <color name="app_color_theme_7">#5A9AEF</color> <!-- Blue Jeans -->
+    <color name="app_color_theme_8">#AC8FEF</color> <!-- Lavender -->
+    <color name="app_color_theme_9">#EE85C1</color> <!-- Pink Rose -->
+    <color name="app_color_clear">#00000000</color>
+
+    <color name="app_color_description">@color/qmui_config_color_gray_5</color>
+
+    <color name="bar_divider">#D4D6D8</color>
+    <color name="tab_panel_bg">#ffffff</color>
+    <color name="tab_panel_divider">@color/bar_divider</color>
+
+    <!-- Components 组件 -->
+    <color name="radiusImageView_border_color">@color/app_color_theme_2</color>
+    <color name="radiusImageView_selected_border_color">@color/app_color_theme_1</color>
+    <color name="radiusImageView_selected_mask_color">#7FEF5362</color>
+
+    <!-- Helper 系列界面 -->
+
+    <!-- ColorHelper 颜色工具 -->
+    <color name="colorHelper_square_alpha_background">@color/app_color_theme_4</color>
+    <color name="colorHelper_square_from_ratio_background">@color/app_color_blue</color>
+    <color name="colorHelper_square_to_ratio_background">@color/app_color_theme_3</color>
+
+
+    <color name="colorPrimary">#0FC0F8</color>
+    <color name="colorBlue91">#91CBFF</color>
+    <color name="colorBlue36">#36a0ff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrayf7">#f7f7f7</color>
+    <color name="colorGrayf0">#f0f0f0</color>
+    <color name="colorGray9b">#9b9b9b</color>
+    <color name="colorGray99">#999999</color>
+    <color name="colorGrayd5">#d5d5d5</color>
+    <color name="colorGraydc">#dcdcdc</color>
+    <color name="colorGray66">#666666</color>
+    <color name="colorGrayee">#eeeeee</color>
+    <color name="colorGray33">#333333</color>
+    <color name="colorGraye2">#E2E2E2</color>
+    <color name="colorGrayea">#eaeaea</color>
+    <color name="colorGraya5">#a5a5a5</color>
+    <color name="colorGray4a">#4a4a4a</color>
+    <color name="colorGrayf2f4">#f2f4f5</color>
+    <color name="colorGraye7">#e7e7e7</color>
+    <color name="colorGraye9">#e9e9e9</color>
+    <color name="colorGrayc5">#c5c5c5</color>
+    <color name="colorBlue56">#56BEFF</color>
+    <color name="colorRedd0">#D0021B</color>
+    <color name="colorRedff">#FF5C5C</color>
+    <color name="colorOrangef9">#F9AE53</color>
+    <color name="colorOrangeff">#FFD060</color>
+    <color name="colorGrayfb">#fbfbfb</color>
+    <color name="colorGrayf5">#f5f5f5</color>
+    <color name="colorBlueea">#EAF6FE</color>
+    <color name="colorBlue2e">#2E8ADD</color>
+    <color name="colorGrayfe">#fefefe</color>
+    <color name="colorGrayd6">#d6d6d6</color>
+    <color name="colorGreen57">#57C357</color>
+
+
+
+    <color name="video_call_peer_close_cameral_text_shadow">#484848</color>
+    <color name="video_call_peer_close_cameral_text_color">#f1f1f1</color>
+
+</resources>

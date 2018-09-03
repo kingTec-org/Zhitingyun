@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1HADeviceLib/1HADeviceLib.iml" filepath="$PROJECT_DIR$/1HADeviceLib/1HADeviceLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HAD/HAD.iml" filepath="$PROJECT_DIR$/HAD/HAD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HADeviceLib/HADeviceLib.iml" filepath="$PROJECT_DIR$/HADeviceLib/HADeviceLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HADeviceLib-release/HADeviceLib-release.iml" filepath="$PROJECT_DIR$/HADeviceLib-release/HADeviceLib-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/haddevice/haddevice.iml" filepath="$PROJECT_DIR$/haddevice/haddevice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhiting-andr1.iml" filepath="$PROJECT_DIR$/zhiting-andr1.iml" />
+    </modules>
+  </component>
+</project>

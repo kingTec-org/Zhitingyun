@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.layout.QMUILinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:layout_marginBottom="2.5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="2.5dp"
+    android:background="@color/qmui_config_color_white"
+    android:gravity="center_vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    app:qmui_borderColor="@color/colorWhite"
+    app:qmui_outerNormalColor="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTime"
+            style="@style/text16"
+            android:textColor="@color/colorGray33" />
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/text16"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorGray66" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            style="@style/text16"
+            android:textColor="@color/colorGray33" />
+
+        <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+            android:id="@+id/btCheck"
+            android:layout_width="68dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/colorPrimary"
+            android:text="查看报告"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            app:qmui_backgroundColor="@color/colorPrimary"
+            app:qmui_borderWidth="0dp"
+            app:qmui_radius="3dp" />
+    </LinearLayout>
+
+</com.qmuiteam.qmui.layout.QMUILinearLayout>

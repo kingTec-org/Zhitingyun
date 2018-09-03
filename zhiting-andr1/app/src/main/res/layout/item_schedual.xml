@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="schedual"
+            type="com.xiyoukeji.zhitingyun.data.entity.ExpertSchEntity.WorkScheduleDtosBean"/>
+    </data>
+
+    <!--<Button-->
+        <!--android:id="@+id/appointment_date"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:background="@drawable/button_register"-->
+        <!--android:textSize="16dp"-->
+        <!--android:textColor="@color/mainColor"-->
+        <!--android:text="X月X日 周X XX:XX - XX:XX" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/button_register"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/mainColor"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="———"
+                android:textColor="@color/mainColor"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="2022年9月30日"
+                android:textColor="@color/mainColor"
+                android:textSize="14dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

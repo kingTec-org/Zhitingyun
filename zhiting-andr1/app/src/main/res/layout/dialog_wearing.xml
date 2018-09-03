@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="180dp"
+    android:background="@drawable/dialogshape"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialogshape"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/three"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="3个月"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="5dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/threesix"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="3-6个月"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="5dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/sixtodec"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="6-12个月"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="5dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="一年以上"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="5dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

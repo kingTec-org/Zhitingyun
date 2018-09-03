@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.xiyoukeji.zhitingyun.viewmodel.mine.ChangePhoneViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="17dp"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_height"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/back_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="@dimen/back_button_left_margin"
+                    android:layout_marginRight="@dimen/back_button_right_margin"
+                    android:src="@mipmap/btn_back" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="设置"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#F7F7F7"/>
+
+        <LinearLayout
+            android:id="@+id/change_phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="新的手机号"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/telephone_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入手机号码"
+                android:text="@={viewModel.mPhone}"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/normal_text_color"
+                android:textColorHint="@color/hint_text_color"
+                android:textSize="14dp" />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#F7F7F7"/>
+
+        <LinearLayout
+            android:id="@+id/code_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="请输入验证码"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/code_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="@={viewModel.mCode}"
+                android:textColor="@color/normal_text_color"
+                android:textColorHint="@color/hint_text_color"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/send_code_tv"
+                android:layout_width="75dp"
+                android:layout_height="25dp"
+                android:text="发送验证码"
+                android:gravity="center"
+                android:textColor="#0FC0F8"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_vertification_code"
+                android:layout_marginLeft="15dp"
+                android:textSize="@dimen/other_text_size" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_login"
+            android:textSize="20dp"
+            style="?android:attr/borderlessButtonStyle"
+
+            android:text="确认"/>
+
+
+    </LinearLayout>
+
+</layout>

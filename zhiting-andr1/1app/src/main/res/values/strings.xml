@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">HADeviceAPI</string>
+
+    <string-array name="freq">
+        <item>125</item>
+        <item>250</item>
+        <item>500</item>
+        <item>750</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>6000</item>
+        <item>8000</item>
+    </string-array>
+
+    <string name="freq_125">125Hz</string>
+    <string name="freq_250">250Hz</string>
+    <string name="freq_500">500Hz</string>
+    <string name="freq_750">750Hz</string>
+    <string name="freq_1000">1000Hz</string>
+    <string name="freq_1500">1500Hz</string>
+    <string name="freq_2000">2000Hz</string>
+    <string name="freq_3000">3000Hz</string>
+    <string name="freq_4000">4000Hz</string>
+    <string name="freq_6000">6000Hz</string>
+    <string name="freq_8000">8000Hz</string>
+
+    <string name="start_scan">开始扫描</string>
+    <string name="scanning">扫描中</string>
+
+    <string name="wait_connect">连接</string>
+    <string name="connecting">连接中</string>
+    <string name="connect_fail">连接失败</string>
+    <string name="connected">已连接</string>
+
+    <string name="disconnecting">断开连接中</string>
+    <string name="active_disconnected">主动断开连接</string>
+    <string name="passive_disconnected">其它原因断开连接</string>
+
+    <string name="select_mem">选择场景</string>
+    <string name="write_sys_param">系统W</string>
+    <string name="write_mem_param">场景W</string>
+
+    <string name="save_hearing">保存听阈</string>
+    <string name="auto_fitting">自动验配</string>
+    <string name="read_all_param">读取参数</string>
+
+    <string name="no_mem_num">请输入场景</string>
+    <string name="no_mem_param">未读取参数</string>
+</resources>

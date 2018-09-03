@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.widget.QMUIWindowInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrayf7"
+        android:orientation="vertical">
+
+        <include layout="@layout/top_bar" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="14dp" />
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/text16"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorGray33" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAccount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="14dp"
+                android:src="@mipmap/account" />
+
+            <TextView
+                style="@style/text16"
+                android:text="账户管理"
+                android:textColor="@color/colorGray33" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_marginRight="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llProblem"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="14dp"
+                android:src="@mipmap/problem" />
+
+            <TextView
+                style="@style/text16"
+                android:text="问题反馈"
+                android:textColor="@color/colorGray33" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_marginRight="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.qmuiteam.qmui.widget.QMUIWindowInsetLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="17dp"
+    tools:context="com.xiyoukeji.zhitingyun.view.main.HearingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/back_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="@dimen/back_button_left_margin"
+                android:layout_marginRight="@dimen/back_button_right_margin"
+                android:src="@mipmap/btn_back" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="测听记录"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvTime"
+        style="@style/text16"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorGray33" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center">
+
+        <View
+            android:layout_width="33dp"
+            android:layout_height="3dp"
+            android:background="@color/mainColor" />
+
+        <TextView
+            style="@style/text16"
+            android:layout_marginLeft="10dp"
+            android:text="左耳"
+            android:textColor="@color/colorGray33" />
+
+        <View
+            android:layout_width="33dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="98dp"
+            android:background="@color/colorRedff" />
+
+        <TextView
+            style="@style/text16"
+            android:layout_marginLeft="10dp"
+            android:text="右耳"
+            android:textColor="@color/colorGray33" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

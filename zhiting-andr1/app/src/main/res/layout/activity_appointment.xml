@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.xiyoukeji.zhitingyun.viewmodel.main.MainViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="17dp"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_height"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/back_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="@dimen/back_button_left_margin"
+
+                    android:layout_marginRight="@dimen/back_button_right_margin"
+                    android:src="@mipmap/btn_back" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="专家预约"
+                android:textColor="#333333"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/select_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:onClick="select"
+                android:text="预约记录"
+                android:textColor="@color/mainColor"
+                android:textSize="16dp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:focusable="false"
+            android:background="@color/white"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#F0F0F0"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="#F0F0F0"
+                    android:src="@mipmap/search" />
+
+                <EditText
+                    android:id="@+id/et_homeFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="8"
+                    android:background="#F0F0F0"
+                    android:hint="搜索"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img_clear_homeFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:src="@mipmap/cancel"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/searchEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:background="#F0F0F0"
+                android:queryHint="请输入物品名称"
+                android:visibility="gone"></android.support.v7.widget.SearchView>
+
+            <ImageView
+                android:id="@+id/imgSelect"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:background="@color/white"
+                android:src="@mipmap/select" />
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/message_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            appoint_items="@{viewModel.mProfessor}"
+            android:layout_height="match_parent"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        <TextView
+            android:id="@+id/showoff"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:visibility="gone" />
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            app:xTabBackgroundColor="@color/white"
+            app:xTabIndicatorHeight="4dp"
+            app:xTabIndicatorWidth="15dp"
+            app:xTabSelectedBackgroundColor="@color/mainColor"
+            app:xTabSelectedTextColor="@color/white"
+            app:xTabSelectedTextSize="20sp"
+            app:xTabTextColor="#000"
+            app:xTabTextSize="18dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</layout>
