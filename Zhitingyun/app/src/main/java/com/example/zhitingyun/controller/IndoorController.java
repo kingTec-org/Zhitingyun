@@ -97,11 +97,17 @@ public class IndoorController extends MainController {
         tvLeft.setTextColor(ContextCompat.getColor(getContext(), R.color.colorWhite));
         tvRight.setTextColor(ContextCompat.getColor(getContext(), R.color.colorPrimary));
         progressBar0.setProgress(50);
+        equipmentParamater.getL_P_VC();
+        final String[] volumeArrayLeft = equipmentParamater.getL_P_VC().split(",");
+        progressBar0.setMax(new Integer(volumeArrayLeft[volumeArrayLeft.length - 1]) - new Integer(volumeArrayLeft[0]));
         progressBar1.setProgress(50);
+        final String[] HighArrayLeft = equipmentParamater.getL_P_TRB().split(",");
+        progressBar1.setMax(new Integer(HighArrayLeft[HighArrayLeft.length - 1]) - new Integer(HighArrayLeft[0]));
         progressBar2.setProgress(50);
         progressBar3.setProgress(50);
+        final String[] LowArrayLeft = equipmentParamater.getL_P_BASS().split(",");
+        progressBar3.setMax(new Integer(LowArrayLeft[LowArrayLeft.length - 1]) - new Integer(LowArrayLeft[0]));
         linearlayout.setRadius(10);
-
 
         mChart.setDrawGridBackground(false);
         mChart.getDescription().setEnabled(true);
